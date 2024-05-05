@@ -1,1 +1,15 @@
+eureka.client.register-with-eureka=true
+eureka.client.service-url.defaultZone=${EUREKA_CLIENT_URI:http://localhost:9102/eureka/}
+
+server.port=${PRODUCT_PORT:9004}
+
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=${DB_URI:jdbc:postgresql://localhost:5432/product}
+spring.datasource.username=${BD_USERNAME:postgres}
+spring.datasource.password=${DB_PASSWORD:admin}
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database=postgresql
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+###############################################"
 
