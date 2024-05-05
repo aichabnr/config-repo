@@ -11,23 +11,22 @@ spring.datasource.password=${DB_PASSWORD:admin}
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.database=postgresql
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
-###############################################"
 
 
 
 #################RABBITMQ:
-spring.rabbitmq.host=10.112.61.34
-spring.rabbitmq.port=5672
-spring.rabbitmq.username=guest
-spring.rabbitmq.password=guest
+spring.rabbitmq.host=${HOST:10.112.61.34}
+spring.rabbitmq.port=${RABBITMQ_PORT:5672}
+spring.rabbitmq.username=${RABBITMQ_USER:guest}
+spring.rabbitmq.password=${RABBITMQ_PASSWORD:guest}
 rabbitmq.queue.name=javaquides
 rabbitmq.exchange.name=javaguides_exchange
 rabbitmq.routing.key=javaguides_routing_key
 #########################mail configuration
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=omaraguil4@gmail.Com
-spring.mail.password=spup gncq hlbo baar
+spring.mail.host=${MAIL_HOST:smtp.gmail.com}
+spring.mail.port=${MAIL_PORT:587}
+spring.mail.username=${MAIL_USERNAME:omaraguil4@gmail.Com}
+spring.mail.password=${MAIL_PASSWORD:spup gncq hlbo baar}
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
-mail.sendTo=omaraguil4@gmail.com
+mail.sendTo=${SEND_TO:omaraguil4@gmail.com}
