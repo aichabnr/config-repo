@@ -13,3 +13,21 @@ spring.jpa.database=postgresql
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 ###############################################"
 
+
+
+#################RABBITMQ:
+spring.rabbitmq.host=10.112.61.34
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+rabbitmq.queue.name=javaquides
+rabbitmq.exchange.name=javaguides_exchange
+rabbitmq.routing.key=javaguides_routing_key
+#########################mail configuration
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=omaraguil4@gmail.Com
+spring.mail.password=spup gncq hlbo baar
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+mail.sendTo=omaraguil4@gmail.com
